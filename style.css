@@ -55,7 +55,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     z-index: 0;
@@ -69,6 +69,8 @@
     border-top: 4px solid #3498db;
     border-radius: 50%;
     animation: spin 1s linear infinite;
+    z-index: 0;
+
 }
 
 .spinner img {
@@ -111,12 +113,10 @@ h1 {
 
 .wrapper {
     margin: auto;
-
-
-    background: rgb(174,236,238);
-background: radial-gradient(circle, rgba(174,236,238,1) 0%, rgba(233,148,216,1) 100%);
-
-animation: loading 3s ease-in-out;
+    background: rgb(174, 236, 238);
+    background: radial-gradient(circle, rgba(174, 236, 238, 1) 0%, rgba(233, 148, 216, 1) 100%);
+    animation: loading 3s ease-in-out;
+    z-index: 1;
 }
 
 ul,
@@ -149,8 +149,8 @@ header {
     justify-content: start;
     align-items: center;
     flex-grow: 0;
-    background: rgb(62,224,230);
-    background: radial-gradient(circle, rgba(62,224,230,1) 0%, rgba(222,41,186,1) 100%);
+    background: rgb(62, 224, 230);
+    background: radial-gradient(circle, rgba(62, 224, 230, 1) 0%, rgba(222, 41, 186, 1) 100%);
     padding: 0;
 }
 
@@ -161,7 +161,7 @@ header ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 3;
+    z-index: 1;
 }
 
 header h1 {
@@ -236,8 +236,8 @@ section {
     animation: slideIn 1s ease-in-out;
 
 
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 
 
 }
@@ -249,6 +249,7 @@ section ul {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    z-index: 1;
 }
 
 section li {
@@ -331,7 +332,7 @@ section li:hover img {
 }
 
 
-#football ul{
+#football ul {
     padding: 0;
 }
 
@@ -344,7 +345,7 @@ section li:hover img {
 
 
 
-                                        /* FOOTER */
+/* FOOTER */
 
 
 footer {
@@ -375,7 +376,7 @@ footer h2 {
 
 
 
-                                /*  RESPONSIVE  */
+/*  RESPONSIVE  */
 
 
 @media screen and (max-width: 1024px) {
@@ -492,8 +493,3 @@ footer h2 {
     }
 
 }
-
-
-
-
-
