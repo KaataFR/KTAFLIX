@@ -152,8 +152,6 @@ header {
     background: rgb(62,224,230);
     background: radial-gradient(circle, rgba(62,224,230,1) 0%, rgba(222,41,186,1) 100%);
     padding: 0;
-
-
 }
 
 header ul {
@@ -163,6 +161,7 @@ header ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    z-index: 3;
 }
 
 header h1 {
@@ -498,28 +497,3 @@ footer h2 {
 
 
 
-/* TEST */
-
-
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-h2 {
-    opacity: 0;
-    animation: fadeIn 1s ease-out forwards;
-}
-
-h2 span {
-    display: inline-block;
-    opacity: 0;
-    animation: fadeIn 1s ease-out forwards;
-    animation-delay: 0.1s;
-}
