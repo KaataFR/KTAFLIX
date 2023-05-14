@@ -1,21 +1,92 @@
 @keyframes slideIn {
     from {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
+
     to {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
+}
 
 
-  @keyframes slideOut {
+@keyframes slideOut {
     from {
-      transform: translateX(100%);
+        transform: translateX(100%);
     }
+
     to {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
+}
+
+
+
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    animation: fadeOut 0.5s ease-in-out 3s forwards;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.spinner img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
 
 
 
@@ -40,8 +111,12 @@ h1 {
 
 .wrapper {
     margin: auto;
-    width: 90%;
-    background-color: #3b386d36;
+
+
+    background: rgb(174,236,238);
+background: radial-gradient(circle, rgba(174,236,238,1) 0%, rgba(233,148,216,1) 100%);
+
+animation: loading 3s ease-in-out;
 }
 
 ul,
@@ -55,16 +130,17 @@ a {
     color: white;
 }
 
-main img {
-    width: 300px;
-    height: 175px;
-    box-shadow: 1px 3px 10px white;
-}
+
+/* HEADER */
+
+
+
 
 
 header img {
     width: 65px;
     height: 60px;
+    padding-left: 50%;
 }
 
 header {
@@ -73,9 +149,11 @@ header {
     justify-content: start;
     align-items: center;
     flex-grow: 0;
-    background-color: #3b386d;
+    background: rgb(62,224,230);
+    background: radial-gradient(circle, rgba(62,224,230,1) 0%, rgba(222,41,186,1) 100%);
     padding: 0;
-    
+
+
 }
 
 header ul {
@@ -119,6 +197,14 @@ header li:hover a {
 }
 
 
+
+
+
+
+/* MAIN */
+
+
+
 main {
     width: 80%;
     margin: 100px auto;
@@ -132,6 +218,13 @@ main h1 {
 
 }
 
+main img {
+    width: 300px;
+    height: 175px;
+    box-shadow: 1px 3px 10px white;
+}
+
+
 
 section {
     display: flex;
@@ -140,17 +233,22 @@ section {
     margin: 50px auto;
     margin-bottom: 150px;
     width: 70%;
-    border: 20px solid white;
-    background-color: #3b386d;
+    border: 8px ridge white;
     animation: slideIn 1s ease-in-out;
+
+
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+
+
 }
 
 section ul {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -161,6 +259,10 @@ section li {
 
 section li:hover {
     transform: scale(1.1);
+}
+
+section li:hover img {
+    opacity: 2;
 }
 
 
@@ -184,6 +286,13 @@ section li:hover {
 }
 
 
+#mangas {
+    position: inherit;
+    width: 100%;
+}
+
+
+
 
 .arrow {
     position: fixed;
@@ -195,9 +304,9 @@ section li:hover {
     opacity: 0.5;
     border-radius: 50%;
     z-index: 999;
-  }
-  
-  .arrow:before {
+}
+
+.arrow:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -206,63 +315,133 @@ section li:hover {
     border: solid #fff;
     border-width: 0 3px 3px 0;
     padding: 6px;
-  }
-  
-.arrow-up{
+}
+
+.arrow-up {
     top: 20px;
 }
 
 
-  
-  .arrow-down:before {
+
+.arrow-down:before {
     transform: translate(-50%, -60%) rotate(45deg);
-  }
+}
 
-  .arrow-up:before {
+.arrow-up:before {
     transform: translate(-50%, -30%) rotate(-135deg);
-  }
-  
+}
+
+
+#football ul{
+    padding: 0;
+}
 
 
 
 
-  /*  Responsive  */ 
 
 
-  @media screen and (max-width: 1800px) {
 
-    .wrapper{
+
+
+
+                                        /* FOOTER */
+
+
+footer {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+
+}
+
+footer h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    text-shadow: 2px 2px 10px #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+                                /*  RESPONSIVE  */
+
+
+@media screen and (max-width: 1024px) {
+
+    .wrapper {
         width: 100%;
     }
 
 
+    /* HEADER */
 
-    header,header ul {
+
+    header {
+        height: 450px;
+    }
+
+
+    header,
+    header ul {
         flex-direction: column;
         align-items: center;
     }
 
-    header ul{
+    header ul {
         padding: 0;
         margin: 0;
     }
 
-    header .logo,  header h1{
+    header .logo,
+    header h1 {
         margin: 0;
-        padding : 0;
+        padding: 0;
     }
 
-    header li{
+    header h1 {
+        display: none;
+    }
+
+    header li {
         margin-top: 15px;
         margin-bottom: 15px;
     }
 
-    main{
+
+    header img {
+        width: 85px;
+        height: 80px;
+        padding: 20px 0;
+    }
+
+
+    /* MAIN */
+
+
+
+
+    main {
         width: 100%;
         margin: 100px 0;
     }
 
-    #streaming, #torrent,#mangas,#football{
+    #streaming,
+    #torrent,
+    #mangas,
+    #football {
         margin: 50px auto 50px auto;
         padding: 0;
         width: 94%;
@@ -273,18 +452,18 @@ section li:hover {
 
     }
 
-    main h1{
-        font-size: 30px;
+    main h1 {
+        font-size: 32px;
         text-decoration: none;
         text-shadow: 2px 2px 10px #000;
     }
 
-    main h2{
+    main h2 {
         font-size: 18px;
     }
 
 
-    section ul{
+    section ul {
         justify-content: center;
         margin: 0;
         padding: 0px;
@@ -303,15 +482,44 @@ section li:hover {
         transform: scale(1);
     }
 
-    main img{
+    main img {
         width: 100%;
         max-width: 300px;
     }
 
-    .arrow{
+    .arrow {
         z-index: 0;
         display: none;
     }
 
-  }
-  
+}
+
+
+
+
+
+/* TEST */
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+h2 span {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.1s;
+}
