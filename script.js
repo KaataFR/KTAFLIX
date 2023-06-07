@@ -1,4 +1,4 @@
-fetch('/site.json')
+fetch('site.json')
   .then(response => response.json())
   .then(data => {
     generateSections(data);
