@@ -171,3 +171,26 @@ footer {
     background: linear-gradient(to bottom, #000000, #1b1b1b);
     padding-bottom: 30px;
 }
+
+
+
+
+
+/*     RESPONSIVE MOBILE    */  
+
+
+header{ 
+    justify-content: center;
+    display: flex;
+}
+
+
+#logo{
+
+}
+
+header nav{
+
+display: none;
+
+}
