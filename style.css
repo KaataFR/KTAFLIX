@@ -113,6 +113,7 @@ section ul {
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 section h2 {
@@ -134,7 +135,7 @@ section p {
     font-weight: bold;
     font-size: 28px;
     text-transform: uppercase;
-    text-shadow: 1px 1px 2px red, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px #D81927, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
 section img {
@@ -176,21 +177,108 @@ footer {
 
 
 
-/*     RESPONSIVE MOBILE    */  
+/*     RESPONSIVE MOBILE    */
 
 
-header{ 
-    justify-content: center;
-    display: flex;
+
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+@media screen and (max-width: 1024px) {
+
+
+
+    header {
+        justify-content: center;
+        display: flex;
+        height: 120px;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-list li::before {
+        display: none;
+    }
+
+    .header-list li{
+        height: 20px;
+    }
+   
+
+
+    #test{
+        margin-bottom: 130px;
+    }
+
+    header nav {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #logo {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+    }
+
+    main{
+
+    }
+
+
+    #logo img {
+        margin: auto;
+        width: 120px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-list {
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    section h2 {
+        text-align: center;
+    }
+
+    section ul {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    section img {
+        width: 100%;
+        height: 200px;
+    }
+
+    section li {
+        width: 47%;
+        margin-bottom: 40px;
+        box-shadow: 5px 5px #D81927;
+    }
+
+    section p {
+        font-size: 1.5em;
+    }
+
 }
 
 
-#logo{
+@media screen and (max-width: 500px) {
 
-}
 
-header nav{
+    section li {
+        width: 100%;
+    }
 
-display: none;
+    section img {
+        width: 90%;
+        height: 200px;
+    }
 
 }

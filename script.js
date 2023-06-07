@@ -8,41 +8,7 @@ fetch('site.json')
   });
 
 
-  function setupCarousel() {
-    const carousel = document.querySelector('.list-site');
-    const carouselItems = Array.from(carousel.children);
-    const carouselItemWidth = carouselItems[0].offsetWidth;
   
-    let currentPosition = 0;
-  
-    function animateCarousel() {
-      carousel.style.transform = `translateX(${currentPosition}px)`;
-    }
-  
-    function moveCarousel(direction) {
-      currentPosition += direction * carouselItemWidth;
-      animateCarousel();
-    }
-  
-    // Déplacer le carrousel vers la droite
-    function moveRight() {
-      moveCarousel(-1);
-    }
-  
-    // Déplacer le carrousel vers la gauche
-    function moveLeft() {
-      moveCarousel(1);
-    }
-  
-    // Cloner les premiers éléments pour créer une apparence de carrousel infini
-    const clonedItems = carouselItems.slice(0, 2).map(item => item.cloneNode(true));
-    carousel.append(...clonedItems);
-  
-    // Ajouter des écouteurs d'événements pour les boutons de défilement
-    document.querySelector('.carousel-button-right').addEventListener('click', moveRight);
-    document.querySelector('.carousel-button-left').addEventListener('click', moveLeft);
-  }
-
 
 
   function generateSections(data) {
@@ -82,7 +48,6 @@ fetch('site.json')
       wrapper.appendChild(section);
     });
   
-    setupCarousel(); // Appel de la fonction setupCarousel une fois que les sections et le carrousel sont générés
   }
   
   
@@ -97,23 +62,38 @@ fetch('site.json')
 
 
 
-// Sélectionnez tous les liens d'ancre avec la classe "scroll-link"
-const scrollLinks = document.querySelectorAll('.scroll-link');
+  const scrollLinks = document.querySelectorAll('.scroll-link');
 
-// Parcourez chaque lien d'ancre
-scrollLinks.forEach(link => {
-    link.addEventListener('click', e => {
-        e.preventDefault(); // Empêche le comportement de défilement par défaut
-
-        // Obtenez l'élément cible en utilisant l'attribut "href" du lien d'ancre
-        const target = document.querySelector(link.getAttribute('href'));
-
-        // Faites défiler la fenêtre jusqu'à l'élément cible en utilisant scrollIntoView avec le comportement "smooth"
-        target.scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+  scrollLinks.forEach(link => {
+      link.addEventListener('click', e => {
+          e.preventDefault();
+  
+          const target = document.querySelector(link.getAttribute('href'));
+          const targetPosition = target.getBoundingClientRect().top;
+          const startPosition = window.pageYOffset;
+          const distance = targetPosition - 125; // Adjust the scroll position by 50 pixels higher
+          const duration = 50; // Adjust the duration of the scroll animation (in milliseconds)
+          let start = null;
+  
+          window.requestAnimationFrame(step);
+  
+          function step(timestamp) {
+              if (!start) start = timestamp;
+              const progress = timestamp - start;
+              window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+              if (progress < duration) window.requestAnimationFrame(step);
+          }
+  
+          // Easing function for smooth scrolling
+          function easeInOutCubic(t, b, c, d) {
+              t /= d / 2;
+              if (t < 1) return c / 2 * t * t * t + b;
+              t -= 2;
+              return c / 2 * (t * t * t + 2) + b;
+          }
+      });
+  });
+  
 
 
 
