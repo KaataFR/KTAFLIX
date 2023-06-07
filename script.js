@@ -7,6 +7,44 @@ fetch('/site.json')
     console.error('Une erreur s\'est produite lors du chargement du fichier JSON :', error);
   });
 
+
+  function setupCarousel() {
+    const carousel = document.querySelector('.list-site');
+    const carouselItems = Array.from(carousel.children);
+    const carouselItemWidth = carouselItems[0].offsetWidth;
+  
+    let currentPosition = 0;
+  
+    function animateCarousel() {
+      carousel.style.transform = `translateX(${currentPosition}px)`;
+    }
+  
+    function moveCarousel(direction) {
+      currentPosition += direction * carouselItemWidth;
+      animateCarousel();
+    }
+  
+    // Déplacer le carrousel vers la droite
+    function moveRight() {
+      moveCarousel(-1);
+    }
+  
+    // Déplacer le carrousel vers la gauche
+    function moveLeft() {
+      moveCarousel(1);
+    }
+  
+    // Cloner les premiers éléments pour créer une apparence de carrousel infini
+    const clonedItems = carouselItems.slice(0, 2).map(item => item.cloneNode(true));
+    carousel.append(...clonedItems);
+  
+    // Ajouter des écouteurs d'événements pour les boutons de défilement
+    document.querySelector('.carousel-button-right').addEventListener('click', moveRight);
+    document.querySelector('.carousel-button-left').addEventListener('click', moveLeft);
+  }
+
+
+
   function generateSections(data) {
     const wrapper = document.querySelector('main');
   
@@ -19,6 +57,7 @@ fetch('/site.json')
   
       const ul = document.createElement('ul');
       ul.classList.add('list-site');
+      ul.classList.add('carousel'); // Ajout de la classe carousel au ul
   
       item.site.forEach((site, index) => {
         const li = document.createElement('li');
@@ -30,7 +69,7 @@ fetch('/site.json')
   
         anchor.target = "_blank";
         anchor.href = item.link[index];
-        thumbnail.src = `/images/thumbnail/${item.key}/${site}.png`;
+        thumbnail.src = `images/thumbnail/${item.key}/${site}.png`;
   
         anchor.appendChild(thumbnail);
         li.appendChild(anchor);
@@ -42,8 +81,21 @@ fetch('/site.json')
       section.appendChild(ul);
       wrapper.appendChild(section);
     });
+  
+    setupCarousel(); // Appel de la fonction setupCarousel une fois que les sections et le carrousel sont générés
   }
   
+  
+
+
+
+
+
+
+
+
+
+
 
 // Sélectionnez tous les liens d'ancre avec la classe "scroll-link"
 const scrollLinks = document.querySelectorAll('.scroll-link');
@@ -62,6 +114,7 @@ scrollLinks.forEach(link => {
         });
     });
 });
+
 
 
 

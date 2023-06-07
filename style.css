@@ -73,22 +73,32 @@ header nav {
     height: 64px;
     display: flex;
     align-items: center;
-    border-top: 2px solid black;
-    transform-origin: left;
-    transition: 2s ease-in-out;
+    position: relative;
 }
 
-.header-list li:hover {
-    border-top: 2px solid red;
+.header-list li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.5s ease;
 }
+
+.header-list li:hover::before {
+    width: 100%;
+}
+
 
 
 .header-list a {
-    transition: all 400ms ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
-.header-list a:hover {
-    color: gray;
+.header-list li:hover a {
+    color: red;
 }
 
 
