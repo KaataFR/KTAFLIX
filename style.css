@@ -68,6 +68,21 @@ header nav {
     width: 1px;
 }
 
+
+.header-list li {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid black;
+    transform-origin: left;
+    transition: 2s ease-in-out;
+}
+
+.header-list li:hover {
+    border-top: 2px solid red;
+}
+
+
 .header-list a {
     transition: all 400ms ease-in-out;
 }
@@ -116,19 +131,21 @@ section img {
     width: 372px;
     height: 210px;
     border-radius: 2px;
-    filter: brightness(0.7); /* Ajustez la valeur pour obtenir l'effet de sombre souhaité */     
+    filter: brightness(0.7);
+    /* Ajustez la valeur pour obtenir l'effet de sombre souhaité */
     transition: all 400ms ease-in-out;
 
 }
 
-section li:hover{
-transform: scale(1.2);
-z-index: 3;
+section li:hover {
+    transform: scale(1.2);
+    z-index: 3;
 
 }
 
-section li:hover img{
-    filter: brightness(1); /* Ajustez la valeur pour obtenir l'effet de sombre souhaité */     
+section li:hover img {
+    filter: brightness(1);
+    /* Ajustez la valeur pour obtenir l'effet de sombre souhaité */
 
 }
 
