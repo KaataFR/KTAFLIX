@@ -2,11 +2,9 @@
 
     0%{
         transform: scale(1) translateX(0%) translateY(0%);
-        background: normal;
     }
     100%{
-        transform: scale(4) translateX(200px) translateY(100px);
-        background: white;
+        transform: scale(4) translateX(200px) translateY(100px) rotate(720deg);
     }
 }
 
@@ -58,6 +56,8 @@ header {
     margin-left: 2%;
     display: flex;
     align-items: center;
+    animation: reverse spin 2s ease-in-out;
+
 }
 
 
@@ -68,7 +68,6 @@ header {
 
 #logo img:hover{
     cursor: pointer;
-    animation: spin 5s ease-in-out;
 }
 
 
@@ -258,6 +257,7 @@ footer {
         width: 100%;
         height: fit-content;
         margin: 0;
+        animation: none;
     }
 
     header .scroll-link{
