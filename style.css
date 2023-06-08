@@ -4,7 +4,19 @@
         transform: scale(1) translateX(0%) translateY(0%);
     }
     100%{
-        transform: scale(4) translateX(200px) translateY(100px) ;
+        transform: scale(8) translateX(100px) translateY(50px) ;
+    }
+}
+
+@keyframes appear {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
     }
 }
 
@@ -58,7 +70,7 @@ header {
     margin-left: 2%;
     display: flex;
     align-items: center;
-    animation: reverse spin 4s ease-in-out;
+    animation: reverse spin 3s ease-in-out;
 
 }
 
@@ -85,6 +97,8 @@ header nav {
     align-items: center;
     font-weight: 500;
     font-size: 16px;
+    animation: appear 4s ease-in-out;
+
 }
 
 #test {
@@ -134,6 +148,7 @@ main {
     width: 96%;
     margin: 150px auto ;
     padding-left: 4%;
+    animation: appear 4s ease-in-out;
 }
 
 section ul {
@@ -163,12 +178,11 @@ section li {
 
 section p {
     position: absolute;
-    cursor: pointer;
     top: 30%;
     width: 100%;
     text-align: center;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.5vw;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px #D81927, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
@@ -292,6 +306,7 @@ footer {
         margin: 20px auto auto auto;
         padding: 0;
         font-size: 1.2em;
+        animation: none;
     }
 
 
@@ -302,6 +317,7 @@ footer {
     main{
         width:90%;
         padding: 0;
+        animation: none;
     }
 
     section h2 {

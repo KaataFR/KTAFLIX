@@ -8,16 +8,8 @@ fetch('site.json')
   });
 
 
-  const logoImg = document.getElementById('logo-img');
   const audioPlayer = document.getElementById('audio-player');
-  audioPlayer.volume = 0.1;
-
-  // Ajouter un gestionnaire d'événements de clic au logo
-  logoImg.addEventListener('click', function() {
-      audioPlayer.play(); // Démarrer la lecture de l'audio
-  });
-
-
+  audioPlayer.volume = 0.1; // Set the volume to 50%
   
 
 
