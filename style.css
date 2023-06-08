@@ -1,10 +1,11 @@
 @keyframes spin {
 
-    0%{
+    0% {
         transform: scale(1) translateX(0%) translateY(0%);
     }
-    100%{
-        transform: scale(8) translateX(100px) translateY(50px) ;
+
+    100% {
+        transform: scale(8) translateX(100px) translateY(50px);
     }
 }
 
@@ -22,7 +23,7 @@
 
 
 
-img{
+img {
     object-fit: cover;
 }
 
@@ -80,7 +81,7 @@ header {
     height: 42px;
 }
 
-#logo img:hover{
+#logo img:hover {
     cursor: pointer;
 }
 
@@ -141,12 +142,12 @@ header nav {
 }
 
 
-    /*  MAIIINNNN */ 
+/*  MAIIINNNN */
 
 
 main {
     width: 96%;
-    margin: 150px auto ;
+    margin: 150px auto;
     padding-left: 4%;
     animation: appear 4s ease-in-out;
 }
@@ -235,10 +236,9 @@ footer {
 @media screen and (max-width: 1181px) {
 
 
-    audio {
+    #audio-player {
         display: none;
     }
-
 
     header {
         justify-content: center;
@@ -254,13 +254,13 @@ footer {
         display: none;
     }
 
-    .header-list li{
+    .header-list li {
         height: 20px;
     }
-   
 
 
-    #test{
+
+    #test {
         margin-bottom: 130px;
     }
 
@@ -280,9 +280,9 @@ footer {
         animation: none;
     }
 
-    header .scroll-link{
+    header .scroll-link {
         width: 100px;
-        transition: all 0ms ;
+        transition: all 0ms;
 
     }
 
@@ -295,7 +295,7 @@ footer {
         align-items: center;
     }
 
-    #logo img:hover{
+    #logo img:hover {
         cursor: default;
         animation: none;
     }
@@ -312,10 +312,10 @@ footer {
 
 
 
-    /*  MAIIINNNN */ 
+    /*  MAIIINNNN */
 
-    main{
-        width:90%;
+    main {
+        width: 90%;
         padding: 0;
         animation: none;
     }
@@ -346,7 +346,7 @@ footer {
         box-shadow: 3px 3px rgba(255, 1, 1, 0.253);
     }
 
-    section li:hover{
+    section li:hover {
         transform: scale(1);
     }
 
@@ -365,38 +365,39 @@ footer {
 @media screen and (max-width: 640px) {
 
 
-    header a{
+    header a {
         font-size: 0.8em;
     }
 
-    header ul{
+    header ul {
         width: 100%;
         margin: 0;
 
         justify-content: center;
     }
 
-    nav{
+    nav {
         text-align: center;
     }
+
     .header-list a {
         transition: all 0ms ease-in-out;
         width: fit-content;
     }
 
- .header-list{
-    width: 95%;
-    justify-content: none;
-    text-align: center;
+    .header-list {
+        width: 95%;
+        justify-content: none;
+        text-align: center;
     }
 
 
-    header .scroll-link{
+    header .scroll-link {
         width: 20%;
         font-size: 3vw;
     }
 
-      /*  MAIIINNNN */ 
+    /*  MAIIINNNN */
 
 
     section li {
