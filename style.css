@@ -9,7 +9,7 @@ a {
 }
 
 body {
-    background-color: #141414;
+    background-color: #0e0d0d;
     margin: 0;
     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
     color: white;
@@ -24,7 +24,7 @@ html {
 
 
 header {
-    background: linear-gradient(to bottom, #000000, #1b1b1b);
+    background: linear-gradient(to bottom, #1f1e1e, #000000d5);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -35,7 +35,7 @@ header {
     padding: 0;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 4;
 }
 
 #logo {
@@ -46,11 +46,12 @@ header {
 
 #logo img {
     width: 110px;
-    height: 35px;
+    height: 42px;
 }
 
 header nav {
-    width: 30%;
+    width: 40%;
+    margin: 0 auto;
 }
 
 .header-list {
@@ -102,9 +103,12 @@ header nav {
 }
 
 
+    /*  MAIIINNNN */ 
+
+
 main {
-    width: 90%;
-    margin: 100px auto;
+    width: 100%;
+    margin: 100px auto auto 50px ;
 }
 
 section ul {
@@ -114,6 +118,7 @@ section ul {
     justify-content: start;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 75px;
 }
 
 section h2 {
@@ -122,13 +127,16 @@ section h2 {
 }
 
 section li {
-    padding: 4px;
+    margin: 5px;
     position: relative;
     transition: all 400ms ease-in-out;
+    border: 1px solid rgba(255, 2, 2, 0.418);
+    border-radius: 10px;
 }
 
 section p {
     position: absolute;
+    cursor: pointer;
     top: 30%;
     width: 100%;
     text-align: center;
@@ -177,12 +185,13 @@ footer {
 
 
 
-/*     RESPONSIVE MOBILE    */
+/*     RESPONSIVE TABLETTE    */
 
 
 
 /* Nouvelles règles si la fenêtre fait au plus 1024px de large */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1170px) {
+
 
 
 
@@ -213,16 +222,21 @@ footer {
     header nav {
         width: 100%;
         padding: 0;
-        margin: 0;
+        text-align: center;
+        margin: 0 auto;
+        height: fit-content;
     }
 
     #logo {
         display: flex;
         width: 100%;
         height: fit-content;
+        margin: 0;
     }
 
-    main{
+    header .scroll-link{
+        width: 100px;
+        transition: all 0ms ;
 
     }
 
@@ -238,6 +252,18 @@ footer {
     .header-list {
         justify-content: space-between;
         width: 80%;
+        margin: 20px auto auto auto;
+        padding: 0;
+        font-size: 1.2em;
+    }
+
+
+
+
+    /*  MAIIINNNN */ 
+
+    main{
+        width:90%;
     }
 
     section h2 {
@@ -246,20 +272,27 @@ footer {
 
     section ul {
         width: 100%;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         text-align: center;
     }
 
     section img {
         width: 100%;
-        height: 200px;
+        height: 25vw;
+
     }
 
     section li {
         width: 47%;
+        margin: 0;
+        padding: 0;
         margin-bottom: 40px;
-        box-shadow: 5px 5px #D81927;
+        box-shadow: 2px 2px #D81927;
+    }
+
+    section li:hover{
+        transform: scale(1);
     }
 
     section p {
@@ -269,16 +302,59 @@ footer {
 }
 
 
-@media screen and (max-width: 500px) {
+
+/*     RESPONSIVE MOBILE    */
+
+
+
+@media screen and (max-width: 640px) {
+
+
+    header a{
+        font-size: 0.8em;
+    }
+
+    header ul{
+        width: 100%;
+        margin: 0;
+
+        justify-content: center;
+    }
+
+    nav{
+        text-align: center;
+    }
+    .header-list a {
+        transition: all 0ms ease-in-out;
+        width: fit-content;
+    }
+
+ .header-list{
+    width: 95%;
+    justify-content: none;
+    text-align: center;
+    }
+
+
+    header .scroll-link{
+        width: 20%;
+        font-size: 3vw;
+    }
+
+      /*  MAIIINNNN */ 
 
 
     section li {
-        width: 100%;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
     }
 
     section img {
+        transition: all 0ms ease-in-out;
+
         width: 90%;
-        height: 200px;
+        height: 30vw;
     }
 
 }

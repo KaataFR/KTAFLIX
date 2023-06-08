@@ -23,7 +23,6 @@ fetch('site.json')
   
       const ul = document.createElement('ul');
       ul.classList.add('list-site');
-      ul.classList.add('carousel'); // Ajout de la classe carousel au ul
   
       item.site.forEach((site, index) => {
         const li = document.createElement('li');
@@ -71,7 +70,7 @@ fetch('site.json')
           const target = document.querySelector(link.getAttribute('href'));
           const targetPosition = target.getBoundingClientRect().top;
           const startPosition = window.pageYOffset;
-          const distance = targetPosition - 125; // Adjust the scroll position by 50 pixels higher
+          const distance = targetPosition - 150; // Adjust the scroll position by 50 pixels higher
           const duration = 50; // Adjust the duration of the scroll animation (in milliseconds)
           let start = null;
   
