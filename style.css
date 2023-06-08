@@ -51,7 +51,7 @@ header {
 
 header nav {
     width: 40%;
-    margin: 0 auto;
+    margin: 0 15%;
 }
 
 .header-list {
@@ -107,12 +107,13 @@ header nav {
 
 
 main {
-    width: 99%;
-    margin: 100px auto ;
-    padding-left: 10px;
+    width: 96%;
+    margin: 150px auto ;
+    padding-left: 4%;
 }
 
 section ul {
+    width: 95%;
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -120,6 +121,7 @@ section ul {
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 75px;
+    margin-left: 5%;
 }
 
 section h2 {
@@ -131,7 +133,7 @@ section li {
     margin: 5px;
     position: relative;
     transition: all 400ms ease-in-out;
-    border: 1px solid rgba(255, 2, 2, 0.418);
+    border: 1px solid #D81927;
     border-radius: 10px;
 }
 
@@ -148,8 +150,8 @@ section p {
 }
 
 section img {
-    width: 372px;
-    height: 210px;
+    width: 330px;
+    height: 200px;
     border-radius: 2px;
     filter: brightness(0.7);
     /* Ajustez la valeur pour obtenir l'effet de sombre souhaité */
@@ -277,6 +279,7 @@ footer {
         justify-content: space-between;
         align-items: center;
         text-align: center;
+        margin: 0;
     }
 
     section img {
@@ -290,7 +293,7 @@ footer {
         margin: 0;
         padding: 0;
         margin-bottom: 40px;
-        box-shadow: 2px 2px #D81927;
+        box-shadow: 3px 3px rgba(255, 1, 1, 0.253);
     }
 
     section li:hover{
@@ -347,7 +350,7 @@ footer {
 
 
     section li {
-        width: 80%;
+        width: 90%;
         margin: auto;
         margin-bottom: 30px;
     }
@@ -356,7 +359,7 @@ footer {
         transition: all 0ms ease-in-out;
 
         width: 90%;
-        height: 40vw;
+        height: 45vw;
     }
 
 }
