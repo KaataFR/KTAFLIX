@@ -180,6 +180,7 @@ section img {
     filter: brightness(0.7);
     /* Ajustez la valeur pour obtenir l'effet de sombre souhaité */
     transition: all 400ms ease-in-out;
+    border-radius: 10px;
 
 }
 
