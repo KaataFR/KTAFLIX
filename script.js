@@ -22,8 +22,8 @@ fetch('site.json')
       heading.textContent = item.type;
   
       const ul = document.createElement('ul');
-      ul.classList.add('list-site');
-  
+      ul.classList.add('list-site');  
+      
       item.site.forEach((site, index) => {
         const li = document.createElement('li');
         const anchor = document.createElement('a');
