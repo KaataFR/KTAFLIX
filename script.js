@@ -8,6 +8,16 @@ fetch('site.json')
   });
 
 
+  const logoImg = document.getElementById('logo-img');
+  const audioPlayer = document.getElementById('audio-player');
+  audioPlayer.volume = 0.2;
+
+  // Ajouter un gestionnaire d'événements de clic au logo
+  logoImg.addEventListener('click', function() {
+      audioPlayer.play(); // Démarrer la lecture de l'audio
+  });
+
+
   
 
 

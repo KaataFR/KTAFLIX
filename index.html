@@ -23,7 +23,13 @@
 
 
     <header>
-        <div id="logo"> <img src="images/ktaflix-logo.png" alt="logo"> </div>
+        <div id="logo">
+            <img id="logo-img" src="images/ktaflix-logo.png" alt="logo">
+            <audio id="audio-player">
+                <source src="music/tudum.mp3" type="audio/mp3">
+                Votre navigateur ne prend pas en charge l'élément audio.
+            </audio>
+        </div>
         <nav>
             <ul class="header-list">
                 <li> <a class="scroll-link" href="#test"> Streaming </a> </li>
@@ -34,14 +40,16 @@
             </ul>
         </nav>
     </header>
+    
     <div id="test"></div>
 
     <main id="main"></main>
 
     <footer>
-        <h2> KaataFR© - 2023</h2>
-        <a href="mailto:>kaatafr@gmail.com" target="_blank"> kaatafr@gmail.com </a>
+        <h2>KaataFR© - 2023</h2>
+        <a href="mailto:kaatafr@gmail.com" target="_blank">kaatafr@gmail.com</a>
     </footer>
+
 
 
     <script src="script.js"></script>
