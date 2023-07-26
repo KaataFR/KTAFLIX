@@ -16,7 +16,7 @@
         "link":[
             "https://torrentz2fr.xyz/",
             "https://rargb.to/",
-            "https://yggtorrent.do/",
+            "https://yggtorrent.ac/",
             "https://www.bitsearch.to/",
             "https://www.limetorrents.to/"
         ],
@@ -27,12 +27,11 @@
         "type":"Anime",
         "link":[
             "https://ssl.jetanimes.com/",
-            "https://vostfree.ws/",
             "https://www.mavanimes.co/",
             "https://v3.voiranime.com/",
             "https://razengan.xyz/"
         ],
-        "site":["jetanimes","vostfree","mavanimes","voiranime","razengan"],
+        "site":["jetanimes","mavanimes","voiranime","razengan"],
         "key":"anime"
     },
     {
@@ -51,13 +50,19 @@
     {
         "type":"Sports",
         "link":[
-            "https://time4tv.stream/",
             "https://my.livesoccer.sx/",
-            "http://hd.worldcupfootball.me/",
-            "https://ww1.pawastreams.top/",
             "https://www.sport-video.org.ua/football.html"
         ],
-        "site":["time4tv","livesoccer","worldcupfootball","pawastreams","sport-video"],
+        "site":["livesoccer","sport-video"],
         "key":"sport"
+    },
+    {
+        "type":"IA",
+        "link":[
+            "https://chat.openai.com/"
+        ],
+        "site":["chatgpt"],
+        "key":"ia"
     }
+
 ]
