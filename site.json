@@ -73,7 +73,7 @@
             "https://chat.openai.com/",
             "https://www.bing.com/chat"
         ],
-        "site":["chatgpt","Copilot"],
+        "site":["chatgpt","copilot"],
         "key":"ia"
     },
     {
