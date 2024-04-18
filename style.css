@@ -98,7 +98,7 @@ header {
 
 
 header nav {
-    width: 40%;
+    width: 60%;
     margin: 0 15%;
 }
 
@@ -187,7 +187,7 @@ section li {
     margin: 5px;
     position: relative;
     transition: all 400ms ease-in-out;
-    border: 1px solid #D81927;
+    border: 2px solid #06db4d;
     border-radius: 10px;
     animation: slide 3s ease-in-out;
 

@@ -2,25 +2,35 @@
     {
         "type":"Streaming",
         "link":[
-            "https://vasto.tv/",
-            "https://ww2.monstream.uno/",
-            "https://www.blablastream.win/",
-            "https://bozrov.com/g9s6smjqbh6h/home/bozrov/"
+            "https://wiflix.motorcycles/",
+            "https://juststream.autos/",
+            "https://www.cpasmieux.yachts/",
+            "https://megastream.autos/",
+            "https://monstream.autos/",
+            "https://www.filmoflix.today/",
+            "https://papadustream.art/",
+            "https://french-streams.top/",
+            "https://sadisflix.cam/",
+            "https://www.blablastream.dog/",
+            "https://www.cpasbien.bar/",
+            "https://www.voirseries.rest/"
         ],
-        "site":["vasto","monstream","blablastream","bozrov"],
+        "site":["wiflix","juststream","cpasmieux","megastream","monstream","filmoflix","papadustream","frenchstream","sadisflix","blablastream","cpasbien","voirseries"],
         "key":"stream"
     },
 
     {
         "type":"Torrent",
         "link":[
+            " https://www.zone-telechargement.tokyo",
             "https://torrentz2fr.xyz/",
             "https://rargb.to/",
             "https://yggtorrent.ac/",
             "https://www.bitsearch.to/",
-            "https://www.limetorrents.to/"
+            "https://1337x.to/",
+            "https://eztvx.to/"
         ],
-        "site":["torrentz","rargb","yggtorrent","bitsearch","limetorrents"],
+        "site":["zone telechargement","torrentz","rargb","yggtorrent","bitsearch","1337x","eztv"],
         "key":"torrent"
     },
     {
@@ -29,40 +39,63 @@
             "https://ssl.jetanimes.com/",
             "https://www.mavanimes.co/",
             "https://v3.voiranime.com/",
-            "https://razengan.xyz/"
+            "https://anime-sama.fr/"
         ],
-        "site":["jetanimes","mavanimes","voiranime","razengan"],
+        "site":["jetanimes","mavanimes","voiranime","animesama"],
         "key":"anime"
     },
     {
         "type":"Jeux",
         "link":[
-            "https://telecharger-jeuxpc.fr/",
             "https://www.skidrowcodex.net/",
             "https://igg-games.com/",
-            "https://crackwatch.eu/",
             "https://fitgirl-repacks.site/",
-            "https://www.skidrowreloaded.com/"
+            "https://www.skidrowreloaded.com/",
+            "https://getgamez.net/"
         ],
-        "site":["telecharger-jeuxpc","skidrowcodex","igggames","crackwatch","fitgirl","skidrowreloaded"],
+        "site":["skidrowcodex","igggames","fitgirl","skidrowreloaded","getgamez"],
         "key":"jeux"
     },
     {
         "type":"Sports",
         "link":[
+            "https://t.me/+6pEaGR0oqcYyNTg8",
+            "https://t.me/ManchesterCity_Vs_RealMadrid_tv",
             "https://my.livesoccer.sx/",
             "https://www.sport-video.org.ua/football.html"
         ],
-        "site":["livesoccer","sport-video"],
+        "site":["telegram1","telegram2","livesoccer","sport-video"],
         "key":"sport"
     },
     {
         "type":"IA",
         "link":[
-            "https://chat.openai.com/"
+            "https://chat.openai.com/",
+            "https://www.bing.com/chat"
         ],
-        "site":["chatgpt"],
+        "site":["chatgpt","Copilot"],
         "key":"ia"
+    },
+    {
+        "type":"Logiciels / Extension",
+        "link":[
+            "https://mega.nz/file/5D8h0RDR#7quMts4H4fsR8QPFuDApdRT8cP6DjwPIEWJgmSRuU3g",
+            "https://ublockorigin.com/fr",
+            "https://chromewebstore.google.com/detail/sponsorblock-pour-youtube/mnjggcdmjocbbbhaepdhchncahnbgone",
+            "https://github.com/besuper/TwitchNoSub"
+        ],
+        "site":["Pack Reinstallation Pc","ublock","sponsorblock","Twitch No Sub Rediff"],
+        "key":"web"
+    },
+    {
+        "type":"Benchmark",
+        "link":[
+            "https://www.cpuid.com/softwares/cpu-z.html",
+            "https://geeks3d.com/dl/show/738",
+            "https://www.ocbase.com/download"
+        ],
+        "site":["CPU-Z","Furmark","OCCT"],
+        "key":"pc"
     }
 
 ]
