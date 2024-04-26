@@ -60,10 +60,11 @@
         "type":"Sports",
         "link":[
             "https://t.me/+6pEaGR0oqcYyNTg8",
+            "https://t.me/Real_Barca_EZBYTV",
             "https://my.livesoccer.sx/",
             "https://www.sport-video.org.ua/football.html"
         ],
-        "site":["telegram1","livesoccer","sport-video"],
+        "site":["telegram1","telegram2","livesoccer","sport-video"],
         "key":"sport"
     },
     {
