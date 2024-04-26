@@ -447,3 +447,22 @@ footer {
     }
 
 }
+
+@media screen and (max-width: 416px) {
+
+
+.header-list{
+    justify-content: space-between;
+}
+
+.header-list li{
+    width: 100px;
+}
+
+li .scroll-link{
+    width: 100px;
+}
+
+
+
+}
