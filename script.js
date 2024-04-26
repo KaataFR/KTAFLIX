@@ -49,6 +49,7 @@ function generateSections(data) {
   });
 }
 
+
 const scrollLinks = document.querySelectorAll(".scroll-link");
 
 scrollLinks.forEach((link) => {
@@ -58,7 +59,17 @@ scrollLinks.forEach((link) => {
     const target = document.querySelector(link.getAttribute("href"));
     const targetPosition = target.getBoundingClientRect().top;
     const startPosition = window.pageYOffset;
-    const distance = targetPosition - 150; // Adjust the scroll position by 50 pixels higher
+    let distance; // We will set this value based on the screen width
+
+    // Check the width of the window
+    if (window.innerWidth <= 768) {
+      // For screens 768px wide or less
+      distance = targetPosition - 200; // Adjust the scroll position by 50 pixels higher
+    } else {
+      // For screens wider than 768px
+      distance = targetPosition - 220; // Adjust the scroll position by 150 pixels higher
+    }
+
     const duration = 50; // Adjust the duration of the scroll animation (in milliseconds)
     let start = null;
 
