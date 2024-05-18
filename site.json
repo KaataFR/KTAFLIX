@@ -23,6 +23,7 @@
         "type":"Torrent",
         "link":[
             "https://www.zone-telechargement.tokyo",
+            "https://www.oxtorrent.day/",
             "https://torrentz2fr.xyz/",
             "https://rargb.to/",
             "https://yggtorrent.ac/",
@@ -30,7 +31,7 @@
             "https://1337x.to/",
             "https://eztvx.to/"
         ],
-        "site":["zone telechargement","torrentz","rargb","yggtorrent","bitsearch","1337x","eztv"],
+        "site":["zone telechargement","oxtorrent","torrentz","rargb","yggtorrent","bitsearch","1337x","eztv"],
         "key":"torrent"
     },
     {
