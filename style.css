@@ -187,7 +187,7 @@ section li {
     margin: 5px;
     position: relative;
     transition: all 400ms ease-in-out;
-    border: 2px solid #06db4d;
+    border: 2px solid #680a0a;
     border-radius: 10px;
     animation: slide 3s ease-in-out;
 
