@@ -26,12 +26,11 @@
             "https://www.oxtorrent.day/",
             "https://torrentz2fr.xyz/",
             "https://rargb.to/",
-            "https://yggtorrent.ac/",
+            "https://yggtorrent.sbs/",
             "https://www.bitsearch.to/",
-            "https://1337x.to/",
             "https://eztvx.to/"
         ],
-        "site":["zone telechargement","oxtorrent","torrentz","rargb","yggtorrent","bitsearch","1337x","eztv"],
+        "site":["zone telechargement","oxtorrent","torrentz","rargb","yggtorrent","bitsearch","eztv"],
         "key":"torrent"
     },
     {
@@ -61,12 +60,11 @@
         "type":"Sports",
         "link":[
             "https://t.me/+6pEaGR0oqcYyNTg8",
-            "https://t.me/Real_Barca_EZBYTV",
             "https://t.me/streammyflix",
             "https://my.livesoccer.sx/",
             "https://www.sport-video.org.ua/football.html"
         ],
-        "site":["telegram1","telegram2","telegram3","livesoccer","sport-video"],
+        "site":["telegram1","telegram3","livesoccer","sport-video"],
         "key":"sport"
     },
     {
