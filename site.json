@@ -2,32 +2,21 @@
     {
         "type":"Streaming",
         "link":[
-            "https://wiflix.promo/",
-            "https://juststream.autos/",
-            "https://www.cpasmieux.yachts/",
-            "https://megastream.autos/",
             "https://monstream.autos/",
-            "https://www.filmoflix.today/",
-            "https://papadustream.art/",
-            "https://french-streams.top/",
-            "https://sadisflix.cam/",
-            "https://www.blablastream.dog/",
-            "https://www.cpasbien.bar/",
-            "https://www.voirseries.rest/"
+            "https://papadustream.art/"
         ],
-        "site":["wiflix","juststream","cpasmieux","megastream","monstream","filmoflix","papadustream","frenchstream","sadisflix","blablastream","cpasbien","voirseries"],
+        "site":["monstream","papadustream"],
         "key":"stream"
     },
 
     {
         "type":"Torrent",
         "link":[
-            "https://www.zone-telechargement.tokyo",
+            "https://www.zone-telechargement.ing",
             "https://rargb.to/",
-            "https://www.bitsearch.to/",
             "https://eztvx.to/"
         ],
-        "site":["zone telechargement","rargb","bitsearch","eztv"],
+        "site":["zone telechargement","rargb","eztv"],
         "key":"torrent"
     },
     {
@@ -55,12 +44,11 @@
     {
         "type":"Sports",
         "link":[
-            "https://t.me/+9W8SBrZ-IbhlNThk",
-            "https://t.me/streammyflix",
+            "https://t.me/lepeuple75",
             "https://my.livesoccer.sx/",
             "https://www.sport-video.org.ua/football.html"
         ],
-        "site":["telegram1","telegram2","livesoccer","sport-video"],
+        "site":["telegram1","livesoccer","sport-video"],
         "key":"sport"
     },
     {
