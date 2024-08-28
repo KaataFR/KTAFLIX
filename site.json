@@ -45,10 +45,9 @@
         "type":"Sports",
         "link":[
             "https://t.me/lepeuple75",
-            "https://my.livesoccer.sx/",
             "https://www.sport-video.org.ua/football.html"
         ],
-        "site":["telegram1","livesoccer","sport-video"],
+        "site":["telegram1","sport-video"],
         "key":"sport"
     },
     {
