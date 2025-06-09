@@ -1,62 +1,31 @@
+
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KTAFLIX</title>
+    <meta name="description" content="Votre hub ultime pour le streaming, les jeux, l'IA et bien plus encore" />
+    <meta name="author" content="KTAFLIX" />
 
-<html lang="fr">
+    <meta property="og:title" content="KTAFLIX" />
+    <meta property="og:description" content="Votre hub ultime pour le streaming, les jeux, l'IA et bien plus encore" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/public/ktaflix-logo.png" />
+    <link rel="icon" type="image/x-icon" href="/public/logo.png" />
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> KTAFLIX </title>
-    <meta name="description"
-        content="Site repertoriant tous les sites que j'utilise pour visionner des films, des séries , des mangas etc..">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/165b1f329e.js" crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ktaflix" />
+    <meta name="twitter:image" content="/public/ktaflix-logo.png" />
+    
+    <!-- Netflix-like font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./images/logo.png">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
 
-<body>
-
-
-
-    <header>
-        <div id="logo">
-            <img id="logo-img" src="images/ktaflix-logo.png" alt="logo">
-            <audio id="audio-player" autoplay>
-                <source src="music/tudum.mp3" type="audio/mp3">
-                Votre navigateur ne prend pas en charge l'élément audio.
-            </audio>
-        </div>
-        <nav>
-            <ul class="header-list">
-                <li> <a class="scroll-link" href="#test"> Streaming </a> </li>
-                <li> <a class="scroll-link" href="#torrent"> Torrent </a> </li>
-                <li> <a class="scroll-link" href="#anime"> Anime </a> </li>
-                <li> <a class="scroll-link" href="#jeux"> Jeux </a> </li>
-                <li> <a class="scroll-link" href="#sport"> Sports </a> </li>
-                <li> <a class="scroll-link" href="#ia"> IA </a> </li>
-                <li> <a class="scroll-link" href="#web"> Logiciels & Extensions </a> </li>
-                <li> <a class="scroll-link" href="#pc"> Benchmark </a> </li>
-            </ul>
-        </nav>
-    </header>
-
-    <div id="test"></div>
-
-    <main id="main"></main>
-
-    <footer>
-        <h2>Kaata© - Août 2024</h2>
-        <a href="mailto:kaatafr@gmail.com" target="_blank">kaatafr@gmail.com</a>
-    </footer>
-
-
-
-    <script src="script.js"></script>
-
-</body>
-
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
