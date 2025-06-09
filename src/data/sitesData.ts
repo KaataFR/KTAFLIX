@@ -89,12 +89,6 @@ export const sitesData = {
       description: "Site de lecture du manga One Piece en ligne"  
     },
     {
-      name: "Sushiscan",
-      image: "../public/cards_img/sushiscan.png",
-      url: "https://www.sushiscan.fr/",
-      description: "Site de lecture de manga en ligne"
-    },
-    {
       name: "Scan VF",
       image: "../public/cards_img/scanvf.png",
       url: "https://www.scan-vf.net/",
