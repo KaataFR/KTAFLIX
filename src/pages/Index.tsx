@@ -209,7 +209,7 @@ const Index = () => {
 
         <CategorySection
           id="software"
-          title="Logiciels & Extensions"
+          title="Logiciels"
           sites={sitesData.software}
         />
 
