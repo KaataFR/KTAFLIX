@@ -133,7 +133,7 @@ export const sitesData = {
     {
       name: "Canal Sport",
       image: "https://d2d1jp95pvjsej.cloudfront.net/canalsport.png",
-      url: "https://espn.com",
+      url: "https://canalsport.ru/",
       description: "Sports et actualités sportives"
     },
     {
