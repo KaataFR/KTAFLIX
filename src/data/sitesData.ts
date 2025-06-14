@@ -37,7 +37,7 @@ export const sitesData = {
     {
       name: "Zone Téléchargement",
       image: "https://d2d1jp95pvjsej.cloudfront.net/zonetelechargement.png",
-      url: "https://www.zone-telechargement.futbol/",
+      url: "https://www.zone-telechargement.cv/",
       description: "Site de Torrents direct"
     },
     {
@@ -118,7 +118,7 @@ export const sitesData = {
     {
       name: "Igg Games",
       image: "https://d2d1jp95pvjsej.cloudfront.net/igggames.png",
-      url: "https://www.igg-games.com/",
+      url: "https://igg-games.com/",
       description: "Plateforme de jeux PC de référence"
     },
     {
@@ -141,14 +141,13 @@ export const sitesData = {
       image: "https://d2d1jp95pvjsej.cloudfront.net/hesgoal.png",
       url: "https://hesgoal-tv.org/",
       description: "Streaming sportif en direct"
-    },
-    ,
+    }/*,
     {
       name: "Huni Telegram",
       image: "https://d2d1jp95pvjsej.cloudfront.net/telegram.jpg",
       url: "https://t.me/hiboux316",
       description: "Streaming sportif en direct via Telegram"
-    }
+    } */
   ],
 
   ai: [
