@@ -28,7 +28,7 @@ export const sitesData = {
     {
       name: "Papadustream",
       image: "https://d2d1jp95pvjsej.cloudfront.net/papadustream.png",
-      url: "https://papadustream.asia/",
+      url: "https://papadustream.fitness/",
       description: "Service de streaming vidéo premium"
     }
   ],
@@ -82,6 +82,12 @@ export const sitesData = {
   ],
 
   manga: [
+    {
+      name: "Manga Moins",
+      image: "https://d2d1jp95pvjsej.cloudfront.net/mangamoins.png",
+      url: "https://mangamoins.shaeishu.co/",
+      description: "Site de lecture de manga en ligne"
+    },
     {
       name: "Kpiece",
       image: "https://d2d1jp95pvjsej.cloudfront.net/kpiece.png",
@@ -162,6 +168,11 @@ export const sitesData = {
       image: "https://d2d1jp95pvjsej.cloudfront.net/gemini.jpg",
       url: "https://gemini.google.com/app",
       description: "IA Google pour conversations avancées"
+    }, {
+      name: "Grok",
+      image: "https://d2d1jp95pvjsej.cloudfront.net/grok.webp",
+      url: "https://grok.com/",
+      description: "IA de X pour conversations avancées"
     },
     {
       name: "Claude",
