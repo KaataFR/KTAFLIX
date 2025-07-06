@@ -24,20 +24,20 @@ export const sitesData = {
       image: "https://d2d1jp95pvjsej.cloudfront.net/monstream.png",
       url: "https://monstream.blue/",
       description: "Service de streaming vidéo premium"
-    },
+    }/*,
     {
       name: "Papadustream",
       image: "https://d2d1jp95pvjsej.cloudfront.net/papadustream.png",
       url: "https://papadustream.fitness/",
       description: "Service de streaming vidéo premium"
-    }
+    }*/
   ],
 
   torrent: [
     {
       name: "Zone Téléchargement",
       image: "https://d2d1jp95pvjsej.cloudfront.net/zonetelechargement.png",
-      url: "https://www.zone-telechargement.cv/",
+      url: "https://www.zone-telechargement.shop/",
       description: "Site de Torrents direct"
     },
     {
@@ -135,13 +135,13 @@ export const sitesData = {
     }
   ],
 
-  sports: [
+  sports: [/*
     {
       name: "Canal Sport",
       image: "https://d2d1jp95pvjsej.cloudfront.net/canalsport.png",
       url: "https://canalsport.ru/",
       description: "Sports et actualités sportives"
-    },
+    },*/
     {
       name: "Hesgoal",
       image: "https://d2d1jp95pvjsej.cloudfront.net/hesgoal.png",
